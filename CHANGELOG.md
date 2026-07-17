@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0] - 2026-07-17
+
+- Add a minimal React/TypeScript/Vite public web foundation with complete German, English, and Turkish interface text.
+- Add a minimal FastAPI public API with health, status, locale, error, CORS, and security-header foundations.
+- Add shared public contracts, Docker Compose, tests, lock files, development documentation, and five ADRs.
+- Split CI into backend, frontend, MkDocs, Typst/PDF, and container checks.
+
 ## [0.6.0] - 2026-07-17
 
 - Define HTP as the future platform and HTH as its handbook/export format.

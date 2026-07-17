@@ -1,0 +1,14 @@
+{
+  "name": "hair-therapy-platform",
+  "private": true,
+  "version": "0.7.0",
+  "packageManager": "pnpm@11.9.0",
+  "workspaces": ["apps/web", "packages/shared", "packages/i18n"],
+  "scripts": {
+    "build": "pnpm --filter @htp/web build",
+    "lint": "pnpm --filter @htp/web lint",
+    "test": "pnpm --filter @htp/web test",
+    "typecheck": "pnpm --filter @htp/web typecheck"
+  },
+  "engines": { "node": ">=22" }
+}

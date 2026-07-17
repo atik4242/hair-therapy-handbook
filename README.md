@@ -2,7 +2,7 @@
 
 Hair Therapy Platform (HTP) is the future modular, evidence-oriented knowledge and private documentation platform. Hair Therapy Handbook (HTH) remains its reproducible, print-ready PDF and documentation export.
 
-> **Current status:** This repository is an architecture, governance, editorial, privacy, internationalization, and PDF-prototype project. It is not a production-ready health service. No user accounts, production cloud functions, private database, photo upload, or notification system are implemented.
+> **Current status:** HTH-007 adds a minimal public React/Vite web application and FastAPI service. It is not a production-ready health service. No user accounts, authentication, database, private data, photo upload, reminder, analytics, or cloud deployment exists.
 
 > **Medical disclaimer:** HTP/HTH does not diagnose, select treatment, create treatment plans, provide individual therapy recommendations, provide emergency assistance, or replace assessment by qualified professionals.
 
@@ -37,9 +37,31 @@ Editorially, HTH requires neutrality, traceable sources, versioned changes, visi
 
 The stable PDF is written to `output/pdf/HTH-design-prototype.pdf`.
 
+## Technical platform quick start
+
+Requirements: Node.js 22 with pnpm 10 and Python 3.12.
+
+```bash
+pnpm install --frozen-lockfile
+pnpm --filter @htp/web dev
+```
+
+```bash
+python -m venv .venv
+.venv/Scripts/pip install -e "apps/api[dev]"
+.venv/Scripts/uvicorn app.main:app --app-dir apps/api --reload
+```
+
+Alternatively use `docker compose up --build`. See [Local Development](docs/development/LOCAL_DEVELOPMENT.md), [Testing](docs/development/TESTING.md), and [Configuration](docs/development/CONFIGURATION.md).
+
 ## Structure
 
 - `src/main.typ` - document entry point
+- `apps/web` - public React/TypeScript/Vite interface
+- `apps/api` - public FastAPI technical API
+- `packages/shared` - versioned public TypeScript contracts
+- `packages/i18n` - stable keys and `de`, `en`, `tr` locale maps
+- `content/knowledge` - reserved public-content boundary
 - `src/config.typ` and `src/data/handbook.yaml` - central configuration
 - `src/styles/` - palette, typography, layout, components, and tables
 - `src/chapters/` - prototype pages
@@ -66,7 +88,7 @@ Never commit names, private photos, medical records, laboratory values, or other
 
 - `main` - stable releases
 - `develop` - integrated development
-- `feature/HTH-006-platform-architecture` - current architecture milestone
+- `feature/HTH-007-technical-platform-foundation` - current technical milestone
 
 Changes are developed on a feature branch and merged into `develop` by pull request. Stable releases move from `develop` to `main`.
 

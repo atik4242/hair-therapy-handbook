@@ -16,6 +16,7 @@ nav:
   - Architecture:
       - Architecture Overview: ARCHITECTURE_OVERVIEW.md
       - Platform Architecture: architecture/PLATFORM_ARCHITECTURE.md
+      - Technical Foundation: architecture/TECHNICAL_FOUNDATION.md
       - Deployment Models: architecture/DEPLOYMENT_MODELS.md
       - ADR Index: architecture/adr/README.md
       - ADR-001 Product name: architecture/adr/ADR-001-product-name-htp.md
@@ -28,11 +29,20 @@ nav:
       - ADR-008 Trust before Revenue: architecture/adr/ADR-008-trust-before-revenue.md
       - ADR-009 Privacy not premium: architecture/adr/ADR-009-privacy-not-premium.md
       - ADR-010 Compatibility gate: architecture/adr/ADR-010-core-principles-gate.md
+      - ADR-011 Technical stack: architecture/adr/ADR-011-react-vite-fastapi-foundation.md
+      - ADR-012 Monorepo: architecture/adr/ADR-012-monorepo-structure.md
+      - ADR-013 Technical i18n: architecture/adr/ADR-013-technical-i18n-foundation.md
+      - ADR-014 API v1: architecture/adr/ADR-014-api-v1-versioning.md
+      - ADR-015 No database/auth: architecture/adr/ADR-015-no-database-auth-hth007.md
   - Privacy:
       - Privacy Model: privacy/PRIVACY_MODEL.md
       - Photo Data Policy: privacy/PHOTO_DATA_POLICY.md
       - Threat Model: privacy/THREAT_MODEL.md
   - Internationalization: i18n/INTERNATIONALIZATION_STRATEGY.md
+  - Development:
+      - Local Development: development/LOCAL_DEVELOPMENT.md
+      - Testing and Builds: development/TESTING.md
+      - Configuration: development/CONFIGURATION.md
   - Editorial Framework:
       - Design System: design-system.md
       - Editorial Framework: editorial-framework.md
