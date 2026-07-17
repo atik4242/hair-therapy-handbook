@@ -1,0 +1,14 @@
+name: "Beispielperson"
+start_date: "01.08.2026"
+version: "0.1.0"
+document_title: "Hair Therapy Handbook"
+subtitle: "Persoenlicher Pflege- und Fortschrittsplan"
+page_format: "a4"
+weeks: 52
+chapters:
+  introduction: true
+  product_overview: true
+  weekly_plan: true
+  monthly_review: true
+  notes: true
+

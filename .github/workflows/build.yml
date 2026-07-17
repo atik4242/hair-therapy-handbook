@@ -1,0 +1,26 @@
+name: Build PDF
+
+on:
+  push:
+    branches: [main, develop, "feature/**"]
+  pull_request:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+        with:
+          typst-version: "0.15.0"
+      - name: Compile handbook
+        run: mkdir -p output/pdf && typst compile src/main.typ output/pdf/HTH-design-prototype.pdf --root .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HTH-design-prototype
+          path: output/pdf/HTH-design-prototype.pdf
+
