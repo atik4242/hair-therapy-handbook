@@ -28,5 +28,5 @@ Manufacturer information must be labelled as such. Contradictory evidence must b
 
 ## Application
 
-Contributions follow the workflow in [CONTRIBUTING.md](CONTRIBUTING.md). Evidence is classified according to the [Evidence Policy](docs/EVIDENCE_POLICY.md). Corrections follow the [Correction Policy](docs/CORRECTION_POLICY.md).
+Contributions follow the repository's [contribution workflow](https://github.com/atik4242/hair-therapy-handbook/blob/develop/CONTRIBUTING.md). Evidence is classified according to the [Evidence Policy](EVIDENCE_POLICY.md). Corrections follow the [Correction Policy](CORRECTION_POLICY.md).
 

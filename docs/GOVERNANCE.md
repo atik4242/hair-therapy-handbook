@@ -14,6 +14,10 @@ No role title implies medical licensure, institutional endorsement, or guarantee
 
 Decisions seek documented consensus. Maintainers resolve remaining scope or release questions after technical and editorial review. Medically relevant content requires source review and, where available, competent scientific review. Lack of such review must be disclosed.
 
+Every new platform feature must also pass the Core Principles compatibility gate defined in the [Platform Vision](PLATFORM_VISION.md). A conflicting feature must be redesigned or rejected before implementation or merge.
+
+Reviewers must also apply the Trust-before-Revenue and data principles. Proposals involving monetisation, analytics, tracking, personal-data access, export, or deletion require an explicit privacy impact review. Privacy protections must not be converted into premium features. When reasonable alternatives are otherwise comparable, reviewers prefer the more user-friendly and data-minimising design.
+
 ## Disagreement
 
 Competing interpretations are recorded with sources, uncertainty, and the reason for the final editorial treatment. Authority is not established by seniority, volume, or commercial influence.
@@ -32,5 +36,5 @@ Manufacturer requests and sponsorship offers do not receive editorial privilege.
 
 ## Policy relationships
 
-Governance applies the [Project Charter](PROJECT_CHARTER.md), [Editorial Principles](../EDITORIAL_PRINCIPLES.md), [Evidence Policy](EVIDENCE_POLICY.md), and [Product Admission Policy](PRODUCT_ADMISSION_POLICY.md).
+Governance applies the [Project Charter](PROJECT_CHARTER.md), [Platform Vision](PLATFORM_VISION.md), [Editorial Principles](EDITORIAL_PRINCIPLES.md), [Evidence Policy](EVIDENCE_POLICY.md), and [Product Admission Policy](PRODUCT_ADMISSION_POLICY.md).
 

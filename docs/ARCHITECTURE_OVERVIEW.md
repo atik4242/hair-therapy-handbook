@@ -1,6 +1,6 @@
-# HTH Target Architecture Overview
+# HTP Target Architecture Overview
 
-This document defines responsibilities and boundaries. It does not implement module selection, conflict resolution, diagnosis, or treatment logic.
+This summary defines responsibilities and boundaries for the future HTP and its HTH export. It does not implement module selection, conflict resolution, diagnosis, or treatment logic. The detailed technology-neutral model is in [Platform Architecture](architecture/PLATFORM_ARCHITECTURE.md).
 
 ## Knowledge Base
 
@@ -18,9 +18,9 @@ Stores source identifiers, claim relationships, retrieval dates, evidence status
 
 Stores traceable precaution and interaction notices. Rules surface predefined information only; they do not diagnose, calculate treatment, or select therapy.
 
-## User Profiles
+## Private user workspace
 
-Store private configuration and personal documentation outside the shared repository. Profiles control presentation, not medical conclusions.
+Stores private configuration and personal documentation separately from public knowledge. Entries control documentation and presentation, not medical conclusions.
 
 ## Illustration Library
 
@@ -32,5 +32,5 @@ Produces deterministic, print-ready publications from approved modules and confi
 
 ## Responsibility boundaries
 
-Shared modules remain independent from private profiles. Evidence metadata remains independent from presentation. Rules remain independent from diagnostic or recommendation engines, which are outside HTH scope.
+Shared modules remain independent from private user records. Evidence metadata remains independent from presentation. Rules remain independent from diagnostic or recommendation engines, which are outside HTP/HTH scope.
 

@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions must follow the [Project Charter](docs/PROJECT_CHARTER.md), [Editorial Principles](EDITORIAL_PRINCIPLES.md), [Governance](docs/GOVERNANCE.md), and [Evidence Policy](docs/EVIDENCE_POLICY.md).
+Contributions must follow the [Project Charter](docs/PROJECT_CHARTER.md), [Editorial Principles](docs/EDITORIAL_PRINCIPLES.md), [Governance](docs/GOVERNANCE.md), and [Evidence Policy](docs/EVIDENCE_POLICY.md).
 
 ## Required conditions
 
