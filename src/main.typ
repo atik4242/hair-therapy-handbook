@@ -4,6 +4,8 @@
 #import "chapters/01-cover.typ" as ch01
 #import "chapters/02-contents.typ" as ch02
 #import "chapters/02a-dashboard.typ" as dashboard
+#import "chapters/02b-what-hth-is.typ" as charter_summary
+#import "chapters/02c-editorial-principles.typ" as principles_summary
 #import "chapters/03-introduction.typ" as ch03
 #import "chapters/04-hair-growth.typ" as ch04
 #import "chapters/05-therapy-overview.typ" as ch05
@@ -29,6 +31,10 @@
 #ch02.chapter()
 #pagebreak()
 #dashboard.chapter()
+#pagebreak()
+#charter_summary.chapter()
+#pagebreak()
+#principles_summary.chapter()
 #pagebreak()
 #ch03.chapter()
 #pagebreak()
