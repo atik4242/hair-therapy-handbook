@@ -1,0 +1,23 @@
+import type { AnchorHTMLAttributes, ButtonHTMLAttributes, HTMLAttributes, PropsWithChildren, ReactNode } from "react";
+import type { Locale } from "@htp/i18n";
+
+export const Button = (p: ButtonHTMLAttributes<HTMLButtonElement>) => <button className="ds-button" type="button" {...p}/>;
+export const Link = (p: AnchorHTMLAttributes<HTMLAnchorElement>) => <a className="ds-link" {...p}/>;
+export const Heading = ({level=2,children,...p}:PropsWithChildren<HTMLAttributes<HTMLHeadingElement>&{level?:1|2|3|4}>)=>{const Tag=`h${level}` as "h1"|"h2"|"h3"|"h4";return <Tag {...p}>{children}</Tag>};
+export const Text = (p: HTMLAttributes<HTMLParagraphElement>) => <p {...p}/>;
+export const Container = ({reading=false,...p}:HTMLAttributes<HTMLDivElement>&{reading?:boolean}) => <div className={reading?"container reading":"container"} {...p}/>;
+export const Stack = ({gap="4",...p}:HTMLAttributes<HTMLDivElement>&{gap?:"2"|"4"|"6"|"8"}) => <div className={`stack gap-${gap}`} {...p}/>;
+export const Card = (p: HTMLAttributes<HTMLElement>) => <article className="card" {...p}/>;
+export const Badge = ({children,tone="neutral"}:PropsWithChildren<{tone?:"neutral"|"info"|"warning"|"success"}>) => <span className={`badge ${tone}`}>{children}</span>;
+export const Divider = () => <hr className="divider"/>;
+export const Callout = ({title,children,tone="info"}:PropsWithChildren<{title:string;tone?:"info"|"warning"|"danger"}>) => <aside className={`callout ${tone}`} aria-label={title}><strong>{title}</strong>{children}</aside>;
+export const Alert = ({children}:PropsWithChildren) => <div className="callout danger" role="alert">{children}</div>;
+export const EvidenceLevel = ({label,detail,disclaimer}:{label:string;detail:string;disclaimer:string}) => <section className="evidence" aria-label={label}><Badge tone="info">{label}</Badge><p>{detail}</p><small>{disclaimer}</small></section>;
+export const UncertaintyNotice = ({title,children,disclaimer}:{title:string;children:ReactNode;disclaimer:string}) => <Callout title={title} tone="warning">{children}<small>{disclaimer}</small></Callout>;
+export const SourceReference = ({id,title,href}:{id:string;title:string;href?:string}) => <li id={id}>{href?<Link href={href}>{title}</Link>:title}</li>;
+export const VersionInformation = ({version,date,versionLabel,dateLabel}:{version:string;date:string;versionLabel:string;dateLabel:string}) => <dl className="metadata"><div><dt>{versionLabel}</dt><dd>{version}</dd></div><div><dt>{dateLabel}</dt><dd>{date}</dd></div></dl>;
+export const LanguageSwitcher = ({locale,label,onChange}:{locale:Locale;label:string;onChange:(locale:Locale)=>void}) => <label className="language">{label}<select value={locale} onChange={e=>onChange(e.target.value as Locale)}><option value="de">Deutsch</option><option value="en">English</option><option value="tr">Türkçe</option></select></label>;
+export const Navigation = ({label,children}:{label:string;children:ReactNode}) => <nav aria-label={label}>{children}</nav>;
+export const Footer = ({children}:{children:ReactNode}) => <footer>{children}</footer>;
+export const SkipLink = ({label,target="main"}:{label:string;target?:string}) => <a className="skip-link" href={`#${target}`}>{label}</a>;
+export const CorrectionNotice = ({title,children}:{title:string;children:ReactNode}) => <Callout title={title} tone="info">{children}</Callout>;

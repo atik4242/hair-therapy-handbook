@@ -34,6 +34,11 @@ nav:
       - ADR-013 Technical i18n: architecture/adr/ADR-013-technical-i18n-foundation.md
       - ADR-014 API v1: architecture/adr/ADR-014-api-v1-versioning.md
       - ADR-015 No database/auth: architecture/adr/ADR-015-no-database-auth-hth007.md
+      - ADR-016 Design system: architecture/adr/ADR-016-central-design-system.md
+      - ADR-017 Knowledge schema: architecture/adr/ADR-017-knowledge-module-schema.md
+      - ADR-018 Evidence and uncertainty: architecture/adr/ADR-018-evidence-uncertainty-separation.md
+      - ADR-019 Non-medical demo: architecture/adr/ADR-019-nonmedical-demo.md
+      - ADR-020 Component documentation: architecture/adr/ADR-020-component-documentation.md
   - Privacy:
       - Privacy Model: privacy/PRIVACY_MODEL.md
       - Photo Data Policy: privacy/PHOTO_DATA_POLICY.md
@@ -43,6 +48,14 @@ nav:
       - Local Development: development/LOCAL_DEVELOPMENT.md
       - Testing and Builds: development/TESTING.md
       - Configuration: development/CONFIGURATION.md
+      - Frontend Components: development/FRONTEND_COMPONENTS.md
+  - Design:
+      - Design System: design/DESIGN_SYSTEM.md
+      - Accessibility Principles: design/ACCESSIBILITY_PRINCIPLES.md
+  - Knowledge:
+      - Module Standard: knowledge/KNOWLEDGE_MODULE_STANDARD.md
+      - Content Schema: knowledge/CONTENT_SCHEMA.md
+      - Editorial Workflow: knowledge/EDITORIAL_WORKFLOW.md
   - Editorial Framework:
       - Design System: design-system.md
       - Editorial Framework: editorial-framework.md

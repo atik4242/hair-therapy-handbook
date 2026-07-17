@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0] - 2026-07-17
+
+- Add central web design tokens, foundations, and typed components.
+- Add a validated Knowledge Module schema and neutral DE/EN/TR demonstration.
+- Add public knowledge routes, accessible 404 handling, and automated accessibility smoke tests.
+- Document the editorial workflow, accessibility principles, and ADR-016 through ADR-020.
+
 ## [0.7.0] - 2026-07-17
 
 - Add a minimal React/TypeScript/Vite public web foundation with complete German, English, and Turkish interface text.

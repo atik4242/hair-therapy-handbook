@@ -2,7 +2,7 @@
 
 Hair Therapy Platform (HTP) is the future modular, evidence-oriented knowledge and private documentation platform. Hair Therapy Handbook (HTH) remains its reproducible, print-ready PDF and documentation export.
 
-> **Current status:** HTH-007 adds a minimal public React/Vite web application and FastAPI service. It is not a production-ready health service. No user accounts, authentication, database, private data, photo upload, reminder, analytics, or cloud deployment exists.
+> **Current status:** HTH-008 adds a central design system, a validated Knowledge Module standard, and a non-medical demonstration in German, English, and Turkish. It is not a production-ready health service. No user accounts, database, private data, analytics, or cloud deployment exists.
 
 > **Medical disclaimer:** HTP/HTH does not diagnose, select treatment, create treatment plans, provide individual therapy recommendations, provide emergency assistance, or replace assessment by qualified professionals.
 
@@ -62,6 +62,8 @@ Alternatively use `docker compose up --build`. See [Local Development](docs/deve
 - `packages/shared` - versioned public TypeScript contracts
 - `packages/i18n` - stable keys and `de`, `en`, `tr` locale maps
 - `content/knowledge` - reserved public-content boundary
+- `apps/web/src/design-system` - central tokens, foundations, and typed components
+- `content/knowledge/schema` - public Knowledge Module schema
 - `src/config.typ` and `src/data/handbook.yaml` - central configuration
 - `src/styles/` - palette, typography, layout, components, and tables
 - `src/chapters/` - prototype pages
@@ -88,10 +90,10 @@ Never commit names, private photos, medical records, laboratory values, or other
 
 - `main` - stable releases
 - `develop` - integrated development
-- `feature/HTH-007-technical-platform-foundation` - current technical milestone
+- `feature/HTH-008-design-system-knowledge-standard` - current milestone branch
 
 Changes are developed on a feature branch and merged into `develop` by pull request. Stable releases move from `develop` to `main`.
 
 ## Next steps
 
-HTH-006 defines conceptual product, architecture, privacy, threat, deployment, and localization boundaries. Future implementation requires separate decisions, security testing, and qualified privacy/legal review. Every feature must pass the Core Principles Compatibility Gate; technical support for modules, profiles, and reminders does not authorize medical conclusions or individualized advice.
+The next milestone may extend the public-content workflow, but medical publication requires qualified review and separate approval. Every feature must pass the Core Principles Compatibility Gate; evidence presentation does not authorize medical conclusions or individualized advice.

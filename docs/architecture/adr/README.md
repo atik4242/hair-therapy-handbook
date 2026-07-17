@@ -19,4 +19,9 @@ ADRs record durable project decisions. Status values are `Proposed`, `Accepted`,
 | [013](ADR-013-technical-i18n-foundation.md) | Technical i18n foundation | Accepted |
 | [014](ADR-014-api-v1-versioning.md) | API v1 versioning | Accepted |
 | [015](ADR-015-no-database-auth-hth007.md) | No database or authentication in HTH-007 | Accepted |
+| [016](ADR-016-central-design-system.md) | Central design system and tokens | Accepted |
+| [017](ADR-017-knowledge-module-schema.md) | Structured Knowledge Module schema | Accepted |
+| [018](ADR-018-evidence-uncertainty-separation.md) | Separate evidence and uncertainty | Accepted |
+| [019](ADR-019-nonmedical-demo.md) | Non-medical first demonstration | Accepted |
+| [020](ADR-020-component-documentation.md) | Internal component documentation | Accepted |
 

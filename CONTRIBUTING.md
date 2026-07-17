@@ -4,6 +4,8 @@ Contributions must follow the [Project Charter](docs/PROJECT_CHARTER.md), [Edito
 
 Technical changes must also pass the [Core Principles gate](docs/architecture/TECHNICAL_FOUNDATION.md#core-principles-compatibility-gate), preserve the public/private boundary, add no tracking or secrets, and run the relevant frontend, backend, documentation, PDF, and container checks described in [Testing](docs/development/TESTING.md).
 
+Frontend contributions must use the central design tokens and components documented in [Frontend Components](docs/development/FRONTEND_COMPONENTS.md). Public Knowledge Modules must validate against the schema, include complete locale and editorial metadata, separate evidence from uncertainty, and follow the [Editorial Workflow](docs/knowledge/EDITORIAL_WORKFLOW.md).
+
 ## Required conditions
 
 - Factual medical or scientific statements need appropriate, verifiable sources.
