@@ -1,0 +1,20 @@
+#let chapters = (
+  (number: "01", key: "cover", title: "Cover"),
+  (number: "02", key: "contents", title: "Inhaltsverzeichnis"),
+  (number: "03", key: "introduction", title: "Einfuehrung"),
+  (number: "04", key: "hair-growth", title: "Grundlagen des Haarwachstums"),
+  (number: "05", key: "therapy-overview", title: "Therapieuebersicht"),
+  (number: "06", key: "grey-attack", title: "Grey Attack"),
+  (number: "07", key: "minoxidil", title: "Minoxidil"),
+  (number: "08", key: "dermastamp", title: "Dermastamp"),
+  (number: "09", key: "ketoconazole", title: "Ketoconazol (Nizoral)"),
+  (number: "10", key: "weekly-plans", title: "Wochenplaene"),
+  (number: "11", key: "monthly-review", title: "Monatskontrolle"),
+  (number: "12", key: "photo-documentation", title: "Fotodokumentation"),
+  (number: "13", key: "progress-analysis", title: "Fortschrittsanalyse"),
+  (number: "14", key: "laboratory-values", title: "Laborwerte"),
+  (number: "15", key: "faq", title: "Haeufige Fragen"),
+  (number: "16", key: "sources", title: "Quellen"),
+  (number: "17", key: "notes", title: "Notizen"),
+)
+

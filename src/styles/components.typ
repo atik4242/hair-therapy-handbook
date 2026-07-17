@@ -17,6 +17,38 @@
   ]
 }
 
+#let medical-note(body) = callout("Medizinischer Hinweis", body, tone: "warning")
+#let tip(body) = callout("Tipp", body)
+#let warning(body) = callout("Warnung", body, tone: "warning")
+#let key-message(body) = callout("Merksatz", body)
+
+#let step-by-step(steps) = block(width: 100%, inset: 11pt, radius: 6pt, stroke: .7pt + palette.line)[
+  #text(size: 8pt, weight: 650, fill: palette.muted)[SCHRITT FUER SCHRITT]
+  #v(8pt)
+  #grid(
+    columns: (7mm, 1fr), row-gutter: 8pt,
+    ..steps.enumerate().map(pair => (
+      box(width: 5.5mm, height: 5.5mm, radius: 50%, fill: palette.ink, align(center + horizon, text(size: 7pt, weight: 650, fill: white)[#(pair.first() + 1)])),
+      align(horizon)[#pair.last()],
+    )).flatten(),
+  )
+]
+
+#let info-card(title, body, accent: palette.muted) = block(
+  width: 100%, inset: 10pt, radius: 6pt,
+  fill: accent.lighten(94%), stroke: .7pt + accent.lighten(55%),
+)[
+  #text(size: 8pt, weight: 650, fill: accent)[#title]
+  #v(6pt)
+  #text(size: 8.5pt)[#body]
+]
+
+#let citation-placeholder(key: "SOURCE-ID") = box(
+  inset: (x: 5pt, y: 2pt), radius: 3pt,
+  stroke: .6pt + palette.line,
+  text(size: 7pt, fill: palette.muted)[Quelle: #key],
+)
+
 #let checklist(items) = grid(
   columns: (6mm, 1fr), row-gutter: 7pt,
   ..items.map(item => (checkbox(size: 4.2mm), align(horizon)[#item])).flatten(),

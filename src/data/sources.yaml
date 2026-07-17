@@ -1,0 +1,12 @@
+version: "0.1"
+sources: []
+citation_fields:
+  - id
+  - title
+  - authors
+  - year
+  - publisher
+  - url
+  - accessed
+  - notes
+
