@@ -14,7 +14,7 @@
   v(28mm)
   block(width: 100%, inset: 14pt, radius: 7pt, fill: palette.surface)[
     #text(size: 8pt, weight: 650, fill: palette.muted)[MEILENSTEIN] #v(5pt)
-    #text(size: 12pt, weight: 600)[HTH-006 / Platform Architecture]
+    #text(size: 12pt, weight: 600)[HTH-007 / Technical Platform Foundation]
   ]
   v(1fr)
   grid(columns: (1fr, auto), [#text(size: 8pt, fill: palette.muted)[Neutrale Platzhalter / keine Gesundheitsdaten]], [v#handbook.version])

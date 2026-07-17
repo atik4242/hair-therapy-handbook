@@ -1,0 +1,25 @@
+services:
+  api:
+    build: ./apps/api
+    environment:
+      HTP_ENVIRONMENT: development
+      HTP_DEBUG: "false"
+      HTP_ALLOWED_ORIGINS: http://localhost:5173
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports: ["5173:8080"]
+    depends_on:
+      api:
+        condition: service_healthy
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]

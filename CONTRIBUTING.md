@@ -2,6 +2,8 @@
 
 Contributions must follow the [Project Charter](docs/PROJECT_CHARTER.md), [Editorial Principles](docs/EDITORIAL_PRINCIPLES.md), [Governance](docs/GOVERNANCE.md), and [Evidence Policy](docs/EVIDENCE_POLICY.md).
 
+Technical changes must also pass the [Core Principles gate](docs/architecture/TECHNICAL_FOUNDATION.md#core-principles-compatibility-gate), preserve the public/private boundary, add no tracking or secrets, and run the relevant frontend, backend, documentation, PDF, and container checks described in [Testing](docs/development/TESTING.md).
+
 ## Required conditions
 
 - Factual medical or scientific statements need appropriate, verifiable sources.
