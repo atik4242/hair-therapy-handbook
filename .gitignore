@@ -1,5 +1,6 @@
 dist/*.pdf
 output/pdf/*.pdf
+output/screenshots/*.png
 tmp/
 .DS_Store
 Thumbs.db

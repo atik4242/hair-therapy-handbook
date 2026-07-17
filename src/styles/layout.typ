@@ -7,14 +7,20 @@
     fill: palette.paper,
     header: context [
       #set text(size: 7.5pt, fill: palette.muted)
-      #grid(columns: (1fr, auto), [HTH / DESIGN PROTOTYPE], [v#handbook.version])
+      #block(width: 100%)[
+        #align(left)[HTH / PATIENT HANDBOOK]
+        #place(top + right)[v#handbook.version]
+      ]
       #line(length: 100%, stroke: .5pt + palette.line)
     ],
     footer: context [
       #line(length: 100%, stroke: .5pt + palette.line)
       #v(3pt)
       #set text(size: 7.5pt, fill: palette.muted)
-      #grid(columns: (1fr, auto), [Keine medizinische Fachlogik - fiktive Beispieldaten], [#counter(page).display("1")])
+      #block(width: 100%)[
+        #align(left)[Designsystem / neutrale Beispieldaten]
+        #place(top + right)[#counter(page).display("1")]
+      ]
     ],
   )
   body

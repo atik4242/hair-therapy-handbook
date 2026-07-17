@@ -3,6 +3,7 @@
 #import "styles/layout.typ": document-layout
 #import "chapters/01-cover.typ" as ch01
 #import "chapters/02-contents.typ" as ch02
+#import "chapters/02a-dashboard.typ" as dashboard
 #import "chapters/03-introduction.typ" as ch03
 #import "chapters/04-hair-growth.typ" as ch04
 #import "chapters/05-therapy-overview.typ" as ch05
@@ -25,6 +26,8 @@
 #ch01.chapter()
 #pagebreak()
 #ch02.chapter()
+#pagebreak()
+#dashboard.chapter()
 #pagebreak()
 #ch03.chapter()
 #pagebreak()
