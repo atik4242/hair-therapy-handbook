@@ -1,0 +1,8 @@
+[package]
+name = "hair-therapy-handbook"
+version = "0.1.0"
+entrypoint = "src/main.typ"
+authors = ["HTH Contributors"]
+license = "MIT"
+description = "A print-ready personal hair-care and progress handbook prototype."
+
