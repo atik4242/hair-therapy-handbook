@@ -1,6 +1,6 @@
 # Hair Therapy Handbook (HTH)
 
-HTH is a modular, print-ready A4 handbook prototype for documenting a personal hair-care routine and its progress. HTH-001 establishes the repository, design system, reusable Typst components, and fictional example pages. It intentionally contains no complete medical guidance.
+HTH is a modular, print-ready A4 handbook prototype for documenting a personal hair-care routine and its progress. HTH-001 established the design system. HTH-002 adds a seventeen-chapter content architecture, neutral editorial placeholders, and a source registry. It intentionally contains no complete medical guidance.
 
 ## Requirements and local build
 
@@ -42,4 +42,3 @@ Changes are developed on a feature branch and merged into `develop` by pull requ
 ## Next steps
 
 HTH-002 will add reviewed content only after the routine, product instructions, and medical safety language have been agreed and independently checked.
-
