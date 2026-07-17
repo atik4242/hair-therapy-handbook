@@ -1,11 +1,9 @@
 #import "../config.typ": palette
-#import "components.typ": info-card, citation-placeholder
+#import "components.typ": info-card, citation-placeholder, chapter-banner
 
 #let chapter-shell(number, title, introduction, sections: ("Inhaltsbereich",), body: none) = {
-  text(size: 8pt, weight: 650, fill: palette.muted, tracking: 1pt)[KAPITEL #number]
-  v(3pt)
+  show heading.where(level: 1): it => chapter-banner(number, it.body, introduction)
   heading(level: 1, outlined: true)[#title]
-  text(size: 10pt, fill: palette.muted)[#introduction]
   v(12pt)
   if body != none {
     body

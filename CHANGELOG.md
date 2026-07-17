@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0] - 2026-07-17
+
+- Finalize typography, color, spacing, and page-grid tokens.
+- Add dashboard and redesign weekly, monthly, and photo pages.
+- Add a unified local SVG icon family.
+- Expand and document the reusable component library.
+
 ## [0.2.0] - 2026-07-17
 
 - Add a seventeen-chapter content architecture.

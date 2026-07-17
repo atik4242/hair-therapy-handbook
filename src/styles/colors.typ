@@ -12,3 +12,14 @@
   palette.muted
 }
 
+#let semantic-color(kind) = if kind == "warning" {
+  palette.warning
+} else if kind == "tip" {
+  palette.checklist
+} else if kind == "key" {
+  palette.key
+} else if kind == "note" {
+  palette.note
+} else {
+  palette.info
+}

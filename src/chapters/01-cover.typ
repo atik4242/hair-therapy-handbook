@@ -1,7 +1,6 @@
 #import "../config.typ": handbook, palette
 
 #let chapter() = {
-  set page(header: none, footer: none)
   v(17mm)
   rect(width: 18mm, height: 3mm, fill: palette.grey_attack, radius: 2mm)
   v(14mm)
@@ -20,4 +19,3 @@
   v(1fr)
   grid(columns: (1fr, auto), [#text(size: 8pt, fill: palette.muted)[Neutrale Platzhalter / keine Gesundheitsdaten]], [v#handbook.version])
 }
-
