@@ -1,12 +1,16 @@
 version: "0.1"
 sources: []
 citation_fields:
-  - id
+  - internal_id
   - title
   - authors
   - year
   - publisher
+  - doi
+  - pmid
+  - guideline
+  - professional_society
   - url
   - accessed
+  - evidence_level
   - notes
-

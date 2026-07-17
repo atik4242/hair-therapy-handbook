@@ -14,7 +14,7 @@
   (number: "13", key: "progress-analysis", title: "Fortschrittsanalyse"),
   (number: "14", key: "laboratory-values", title: "Laborwerte"),
   (number: "15", key: "faq", title: "Haeufige Fragen"),
-  (number: "16", key: "sources", title: "Quellen"),
-  (number: "17", key: "notes", title: "Notizen"),
+  (number: "16", key: "glossary", title: "Glossar"),
+  (number: "17", key: "sources", title: "Quellen"),
+  (number: "18", key: "notes", title: "Notizen"),
 )
-
