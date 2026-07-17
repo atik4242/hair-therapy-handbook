@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0] - 2026-07-17
+
+- Add six reusable editorial page templates.
+- Add six named editorial components plus FAQ and illustration helpers.
+- Expand neutral source metadata and illustration registries.
+- Add an alphabetic glossary and modular unanswered FAQ structure.
+
 ## [0.3.0] - 2026-07-17
 
 - Finalize typography, color, spacing, and page-grid tokens.

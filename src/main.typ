@@ -17,6 +17,7 @@
 #import "chapters/13-progress-analysis.typ" as ch13
 #import "chapters/14-laboratory-values.typ" as ch14
 #import "chapters/15-faq.typ" as ch15
+#import "chapters/16-glossary.typ" as glossary
 #import "chapters/16-sources.typ" as ch16
 #import "chapters/17-notes.typ" as ch17
 
@@ -54,6 +55,8 @@
 #ch14.chapter()
 #pagebreak()
 #ch15.chapter()
+#pagebreak()
+#glossary.chapter()
 #pagebreak()
 #ch16.chapter()
 #pagebreak()

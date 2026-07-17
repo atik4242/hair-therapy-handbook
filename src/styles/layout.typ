@@ -5,22 +5,20 @@
     paper: "a4",
     margin: page-margin,
     fill: palette.paper,
-    header: context [
+    header: [
       #set text(size: 7.5pt, fill: palette.muted)
-      #block(width: 100%)[
-        #align(left)[HTH / PATIENT HANDBOOK]
-        #place(top + right)[v#handbook.version]
-      ]
+      #table(columns: (1fr, auto), stroke: none, inset: 0pt,
+        [HTH / PATIENT HANDBOOK], [v#handbook.version],
+      )
       #line(length: 100%, stroke: .5pt + palette.line)
     ],
-    footer: context [
+    footer: [
       #line(length: 100%, stroke: .5pt + palette.line)
       #v(3pt)
       #set text(size: 7.5pt, fill: palette.muted)
-      #block(width: 100%)[
-        #align(left)[Designsystem / neutrale Beispieldaten]
-        #place(top + right)[#counter(page).display("1")]
-      ]
+      #table(columns: (1fr, auto), stroke: none, inset: 0pt,
+        [Designsystem / neutrale Beispieldaten], [#context counter(page).display("1")],
+      )
     ],
   )
   body

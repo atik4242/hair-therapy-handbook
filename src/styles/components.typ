@@ -29,7 +29,10 @@
 #let callout(title, body, tone: "info") = {
   let color = if tone == "warning" { palette.warning } else if tone == "tip" { palette.checklist } else if tone == "key" { palette.key } else { palette.info }
   block(width: 100%, inset: 10pt, radius: 6pt, fill: color.lighten(91%), stroke: (left: 3pt + color))[
-    #text(weight: 650, fill: color)[#title] #h(5pt) #text(fill: palette.ink)[#body]
+    #grid(columns: (auto, 1fr), gutter: 7pt, align: top,
+      [#text(weight: 650, fill: color)[#title]],
+      [#text(fill: palette.ink)[#body]],
+    )
   ]
 }
 
@@ -85,6 +88,35 @@
   stroke: .6pt + palette.line,
   text(size: 7pt, fill: palette.muted)[Quelle: #key],
 )
+
+#let at-a-glance(body) = callout("Auf einen Blick", body, tone: "info")
+#let editorial-key-message(body) = callout("Merksatz", body, tone: "key")
+#let practice-tip(body) = callout("Praxis-Tipp", body, tone: "tip")
+#let common-error(body) = callout("Haeufiger Fehler", body, tone: "warning")
+#let scientific-background(body) = block(width: 100%, inset: 10pt, radius: 6pt, stroke: .7pt + palette.line, fill: palette.surface)[
+  #text(size: 8pt, weight: 650, fill: palette.info)[WISSENSCHAFTLICHER HINTERGRUND]
+  #v(6pt)
+  #text(size: 8.5pt)[#body]
+]
+#let summary-box(body) = block(width: 100%, inset: 11pt, radius: 6pt, fill: palette.ink)[
+  #text(size: 8pt, weight: 650, fill: white)[ZUSAMMENFASSUNG]
+  #v(6pt)
+  #text(size: 8.5pt, fill: white)[#body]
+]
+
+#let illustration-slot(label, asset-key) = block(width: 100%, height: 28mm, inset: 9pt, radius: 6pt, stroke: (dash: "dashed", thickness: .8pt, paint: palette.line))[
+  #align(center + horizon)[
+    #text(size: 8pt, weight: 650, fill: palette.muted)[ILLUSTRATION: #label] \
+    #text(size: 7pt, fill: palette.muted)[SVG-Slot / #asset-key]
+  ]
+]
+
+#let faq-question(question-id, question: "Frage wird spaeter redaktionell formuliert") = block(width: 100%, inset: 9pt, radius: 6pt, stroke: .7pt + palette.line)[
+  #grid(columns: (9mm, 1fr), gutter: 7pt, align: horizon,
+    box(width: 7mm, height: 7mm, radius: 50%, fill: palette.surface-strong, align(center + horizon, text(size: 7pt, weight: 650)[#question-id])),
+    [#text(size: 8.5pt, weight: 600)[#question] #v(5pt) #line(length: 100%, stroke: .5pt + palette.line)],
+  )
+]
 
 #let checklist(items) = grid(
   columns: (6mm, 1fr), row-gutter: 7pt,

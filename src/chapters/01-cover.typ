@@ -14,7 +14,7 @@
   v(28mm)
   block(width: 100%, inset: 14pt, radius: 7pt, fill: palette.surface)[
     #text(size: 8pt, weight: 650, fill: palette.muted)[MEILENSTEIN] #v(5pt)
-    #text(size: 12pt, weight: 600)[HTH-002 / Content Architecture & Therapy Framework]
+    #text(size: 12pt, weight: 600)[HTH-004 / Editorial Framework]
   ]
   v(1fr)
   grid(columns: (1fr, auto), [#text(size: 8pt, fill: palette.muted)[Neutrale Platzhalter / keine Gesundheitsdaten]], [v#handbook.version])
