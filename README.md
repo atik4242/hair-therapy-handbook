@@ -1,20 +1,28 @@
-# Hair Therapy Handbook (HTH)
+# Hair Therapy Platform (HTP) and Hair Therapy Handbook (HTH)
 
-HTH is an open, modular knowledge and documentation platform with a reproducible, print-ready handbook generator. Its long-term architecture separates shared knowledge, evidence metadata, rule-based precautions, reusable modules, private profiles, illustrations, and publication output.
+Hair Therapy Platform (HTP) is the future modular, evidence-oriented knowledge and private documentation platform. Hair Therapy Handbook (HTH) remains its reproducible, print-ready PDF and documentation export.
 
-> **Medical disclaimer:** HTH is not a medical-advice platform. It does not diagnose, select treatment, provide individual therapy recommendations, provide emergency assistance, or replace examination and treatment by qualified professionals.
+> **Current status:** This repository is an architecture, governance, editorial, privacy, internationalization, and PDF-prototype project. It is not a production-ready health service. No user accounts, production cloud functions, private database, photo upload, or notification system are implemented.
 
-HTH may present sourced information and predefined precaution notices, but it never chooses therapy. Configurable personal profiles are private presentation and documentation inputs, not diagnostic or recommendation logic.
+> **Medical disclaimer:** HTP/HTH does not diagnose, select treatment, create treatment plans, provide individual therapy recommendations, provide emergency assistance, or replace assessment by qualified professionals.
+
+HTP informs but does not diagnose; documents but does not recommend therapy; and reminds but does not decide for the user. Plans and reminders are future, optional, user-created documentation tools—not predefined schedules or adherence judgments.
 
 ## Project foundations
 
 - [Project Charter](docs/PROJECT_CHARTER.md)
-- [Editorial Principles](EDITORIAL_PRINCIPLES.md)
+- [Platform Vision and Core Principles](docs/PLATFORM_VISION.md)
+- [Editorial Principles](docs/EDITORIAL_PRINCIPLES.md)
 - [Governance](docs/GOVERNANCE.md)
 - [Evidence Policy](docs/EVIDENCE_POLICY.md)
 - [Product Admission Policy](docs/PRODUCT_ADMISSION_POLICY.md)
 - [Correction Policy](docs/CORRECTION_POLICY.md)
 - [Architecture Overview](docs/ARCHITECTURE_OVERVIEW.md)
+- [Platform Architecture](docs/architecture/PLATFORM_ARCHITECTURE.md)
+- [Product Structure](docs/platform/PRODUCT_STRUCTURE.md)
+- [Privacy Model](docs/privacy/PRIVACY_MODEL.md)
+- [Internationalization Strategy](docs/i18n/INTERNATIONALIZATION_STRATEGY.md)
+- [Glossary](docs/GLOSSARY.md)
 
 Editorially, HTH requires neutrality, traceable sources, versioned changes, visible uncertainty, separation of facts from personal records, and correctability. Advertising, unsupported promises, rankings, purchase recommendations, diagnoses, and therapy recommendations are prohibited.
 
@@ -40,7 +48,11 @@ The stable PDF is written to `output/pdf/HTH-design-prototype.pdf`.
 - `.github/workflows/` - CI build and PDF artifact
 - `docs/design-system.md` - component, typography, icon, and print guidance
 - `docs/editorial-framework.md` - chapter anatomy, page templates, registries, and content guardrails
-- `docs/` and `EDITORIAL_PRINCIPLES.md` - charter, governance, evidence, admission, correction, and architecture policies
+- `docs/platform/` - product areas and reminder boundaries
+- `docs/architecture/` - technology-neutral architecture, deployment comparison, and ADRs
+- `docs/privacy/` - privacy, photo-data, and threat-model policies
+- `docs/i18n/` - internationalization and localization strategy
+- `docs/` - governance, shared terminology, architecture, privacy, and platform documentation
 
 ## Design principles
 
@@ -48,16 +60,16 @@ The visual system is calm, high-contrast, spacious, and optimized for A4 printin
 
 ## Privacy
 
-Never commit names, private photos, medical records, laboratory values, or other personal health information. Repository examples must remain fictional. Personal copies belong outside version control.
+Never commit names, private photos, medical records, laboratory values, or other personal health information. Repository examples must remain fictional and labelled as non-medical demonstrations. Personal copies belong outside version control. Trust-before-Revenue, data minimisation, user control, and privacy that is not paywalled are binding design principles.
 
 ## Branching
 
 - `main` - stable releases
 - `develop` - integrated development
-- `feature/HTH-005-governance-charter` - current governance milestone
+- `feature/HTH-006-platform-architecture` - current architecture milestone
 
 Changes are developed on a feature branch and merged into `develop` by pull request. Stable releases move from `develop` to `main`.
 
 ## Next steps
 
-Future modules must pass the documented scope, evidence, editorial, and review workflow. Technical support for modules, profiles, and interaction rules does not authorize medical conclusions or individualized advice.
+HTH-006 defines conceptual product, architecture, privacy, threat, deployment, and localization boundaries. Future implementation requires separate decisions, security testing, and qualified privacy/legal review. Every feature must pass the Core Principles Compatibility Gate; technical support for modules, profiles, and reminders does not authorize medical conclusions or individualized advice.

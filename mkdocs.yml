@@ -1,0 +1,41 @@
+site_name: Hair Therapy Platform Documentation
+site_description: Architecture, governance, privacy, and editorial documentation for HTP and HTH
+docs_dir: docs
+site_dir: site
+nav:
+  - Overview: index.md
+  - Project:
+      - Charter: PROJECT_CHARTER.md
+      - Platform Vision: PLATFORM_VISION.md
+      - Editorial Principles: EDITORIAL_PRINCIPLES.md
+      - Governance: GOVERNANCE.md
+      - Glossary: GLOSSARY.md
+  - Platform:
+      - Product Structure: platform/PRODUCT_STRUCTURE.md
+      - Reminder Principles: platform/REMINDER_PRINCIPLES.md
+  - Architecture:
+      - Architecture Overview: ARCHITECTURE_OVERVIEW.md
+      - Platform Architecture: architecture/PLATFORM_ARCHITECTURE.md
+      - Deployment Models: architecture/DEPLOYMENT_MODELS.md
+      - ADR Index: architecture/adr/README.md
+      - ADR-001 Product name: architecture/adr/ADR-001-product-name-htp.md
+      - ADR-002 Public/private separation: architecture/adr/ADR-002-public-private-separation.md
+      - ADR-003 Internationalization: architecture/adr/ADR-003-internationalization-from-start.md
+      - ADR-004 Private photos: architecture/adr/ADR-004-photos-private-default.md
+      - ADR-005 Hybrid/self-hosting: architecture/adr/ADR-005-hybrid-self-hosting.md
+      - ADR-006 Reminder boundaries: architecture/adr/ADR-006-reminders-no-medical-advice.md
+      - ADR-007 HTH export: architecture/adr/ADR-007-hth-export-format.md
+      - ADR-008 Trust before Revenue: architecture/adr/ADR-008-trust-before-revenue.md
+      - ADR-009 Privacy not premium: architecture/adr/ADR-009-privacy-not-premium.md
+      - ADR-010 Compatibility gate: architecture/adr/ADR-010-core-principles-gate.md
+  - Privacy:
+      - Privacy Model: privacy/PRIVACY_MODEL.md
+      - Photo Data Policy: privacy/PHOTO_DATA_POLICY.md
+      - Threat Model: privacy/THREAT_MODEL.md
+  - Internationalization: i18n/INTERNATIONALIZATION_STRATEGY.md
+  - Editorial Framework:
+      - Design System: design-system.md
+      - Editorial Framework: editorial-framework.md
+      - Evidence Policy: EVIDENCE_POLICY.md
+      - Product Admission: PRODUCT_ADMISSION_POLICY.md
+      - Correction Policy: CORRECTION_POLICY.md

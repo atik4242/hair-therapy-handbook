@@ -1,0 +1,24 @@
+# Glossary
+
+- **Core Principles Compatibility Gate:** Mandatory review that checks every feature against the three HTP principles before implementation and merge.
+- **Dark Pattern:** Interface design that manipulates or pressures a user into a choice they might not otherwise make.
+- **Data Sovereignty:** A user's practical control over access to, use, export, and deletion of their personal data.
+- **Documentation Rate:** A descriptive measure of completed documentation entries; it is not a measure of treatment adherence or medical success.
+- **Evidence Registry:** Versioned metadata describing sources, provenance, evidence status, and review state.
+- **Hair Therapy Handbook (HTH):** The handbook and PDF/document export format produced from eligible HTP modules and user-selected records.
+- **Hair Therapy Platform (HTP):** The proposed modular knowledge and private documentation platform.
+- **HTH:** Abbreviation for Hair Therapy Handbook.
+- **HTP:** Abbreviation for Hair Therapy Platform.
+- **Internationalization (i18n):** Designing software and content so multiple languages, locales, formats, and writing directions can be supported.
+- **Knowledge Module:** A versioned, source-oriented unit of public editorial content.
+- **Localization (l10n):** Adapting and reviewing content and interface behaviour for a particular language or locale.
+- **Personal Plan:** A private set of entries created, controlled, edited, and deleted by the user; it is not a platform-generated treatment plan.
+- **Photo Diary:** A private collection of user-provided photos and notes, without public sharing, recognition, diagnosis, or automatic medical assessment.
+- **Privacy by Default:** Configuring a product so the least data-revealing reasonable settings apply without user action.
+- **Privacy by Design:** Addressing privacy throughout feature, architecture, implementation, and operational design.
+- **Private User Data:** Account-linked or user-provided records that are not public editorial content and require authorised access.
+- **Public Data:** Reviewed content and metadata intentionally published for general access; it excludes private user records.
+- **Reminder:** An optional, user-controlled notification referring only to an entry created by that user.
+- **Self-Hosting:** Operating an instance on infrastructure controlled by the user or another instance operator.
+- **Sensitive Data:** Data whose disclosure or misuse could create significant harm or reveal private circumstances, including potentially health-related records and identifiable photos.
+- **Trust before Revenue:** Binding principle that user trust, privacy, transparency, and control take priority over short-term revenue.

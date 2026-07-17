@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0] - 2026-07-17
+
+- Define HTP as the future platform and HTH as its handbook/export format.
+- Add product, architecture, deployment, privacy, photo-data, threat-model, and internationalization documentation.
+- Establish ten architecture decision records and a shared platform glossary.
+- Make Core Principles, Trust before Revenue, user-created plans, and non-premium privacy binding constraints.
+
 ## [0.5.0] - 2026-07-17
 
 - Establish project charter, governance, evidence, admission, and correction policies.
