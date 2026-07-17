@@ -1,3 +1,3 @@
 # Public Knowledge Content
 
-Reserved for future reviewed public knowledge modules. HTH-007 adds no medical content and no migration of existing handbook material.
+HTH-008 defines the schema for future reviewed public Knowledge Modules and includes one non-medical structural demonstration. It adds no medical module and migrates no handbook treatment material.
