@@ -7,18 +7,14 @@
     fill: palette.paper,
     header: [
       #set text(size: 7.5pt, fill: palette.muted)
-      #table(columns: (1fr, auto), stroke: none, inset: 0pt,
-        [HTH / PATIENT HANDBOOK], [v#handbook.version],
-      )
+      #grid(columns: (1fr, auto), [HTH / PATIENT HANDBOOK], [v#handbook.version])
       #line(length: 100%, stroke: .5pt + palette.line)
     ],
     footer: [
       #line(length: 100%, stroke: .5pt + palette.line)
       #v(3pt)
       #set text(size: 7.5pt, fill: palette.muted)
-      #table(columns: (1fr, auto), stroke: none, inset: 0pt,
-        [Designsystem / neutrale Beispieldaten], [#context counter(page).display("1")],
-      )
+      #grid(columns: (1fr, auto), [Designsystem / neutrale Beispieldaten], [#context counter(page).display("1")])
     ],
   )
   body

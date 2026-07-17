@@ -1,6 +1,22 @@
 # Hair Therapy Handbook (HTH)
 
-HTH is a modular, print-ready A4 handbook prototype for documenting a personal hair-care routine and its progress. HTH-001 established the foundation, HTH-002 added the content architecture, HTH-003 finalized the visual system, and HTH-004 adds a neutral editorial framework. It intentionally contains no medical guidance.
+HTH is an open, modular knowledge and documentation platform with a reproducible, print-ready handbook generator. Its long-term architecture separates shared knowledge, evidence metadata, rule-based precautions, reusable modules, private profiles, illustrations, and publication output.
+
+> **Medical disclaimer:** HTH is not a medical-advice platform. It does not diagnose, select treatment, provide individual therapy recommendations, provide emergency assistance, or replace examination and treatment by qualified professionals.
+
+HTH may present sourced information and predefined precaution notices, but it never chooses therapy. Configurable personal profiles are private presentation and documentation inputs, not diagnostic or recommendation logic.
+
+## Project foundations
+
+- [Project Charter](docs/PROJECT_CHARTER.md)
+- [Editorial Principles](EDITORIAL_PRINCIPLES.md)
+- [Governance](docs/GOVERNANCE.md)
+- [Evidence Policy](docs/EVIDENCE_POLICY.md)
+- [Product Admission Policy](docs/PRODUCT_ADMISSION_POLICY.md)
+- [Correction Policy](docs/CORRECTION_POLICY.md)
+- [Architecture Overview](docs/ARCHITECTURE_OVERVIEW.md)
+
+Editorially, HTH requires neutrality, traceable sources, versioned changes, visible uncertainty, separation of facts from personal records, and correctability. Advertising, unsupported promises, rankings, purchase recommendations, diagnoses, and therapy recommendations are prohibited.
 
 ## Requirements and local build
 
@@ -24,6 +40,7 @@ The stable PDF is written to `output/pdf/HTH-design-prototype.pdf`.
 - `.github/workflows/` - CI build and PDF artifact
 - `docs/design-system.md` - component, typography, icon, and print guidance
 - `docs/editorial-framework.md` - chapter anatomy, page templates, registries, and content guardrails
+- `docs/` and `EDITORIAL_PRINCIPLES.md` - charter, governance, evidence, admission, correction, and architecture policies
 
 ## Design principles
 
@@ -37,10 +54,10 @@ Never commit names, private photos, medical records, laboratory values, or other
 
 - `main` - stable releases
 - `develop` - integrated development
-- `feature/HTH-001-project-foundation` - HTH-001 implementation
+- `feature/HTH-005-governance-charter` - current governance milestone
 
 Changes are developed on a feature branch and merged into `develop` by pull request. Stable releases move from `develop` to `main`.
 
 ## Next steps
 
-HTH-002 will add reviewed content only after the routine, product instructions, and medical safety language have been agreed and independently checked.
+Future modules must pass the documented scope, evidence, editorial, and review workflow. Technical support for modules, profiles, and interaction rules does not authorize medical conclusions or individualized advice.

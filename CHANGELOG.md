@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0] - 2026-07-17
+
+- Establish project charter, governance, evidence, admission, and correction policies.
+- Add binding editorial principles and a target architecture overview.
+- Expand contributor review requirements and project documentation.
+- Integrate two neutral governance-summary pages into the handbook.
+
 ## [0.4.0] - 2026-07-17
 
 - Add six reusable editorial page templates.
